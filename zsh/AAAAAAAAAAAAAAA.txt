@@ -1,0 +1,18 @@
+cd ~/
+
+# Atualiza pacotes e instala programas necessários
+sudo apt install eza -y
+sudo apt install vim -y
+sudo apt install neofetch -y #programa necessário
+sudo apt install zsh -y      #programa necessário
+sudo apt install curl git -y #programa necessário
+
+# Altera o shell padrão para Zsh
+sudo chsh -s $(which zsh)
+
+# Instala o Oh My Zsh
+y | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Instala o Zinit
+y | bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
