@@ -22,7 +22,7 @@ alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 alias wtr='curl wttr.in'
 alias span='ssh pansiere@66.228.61.207'
 alias sd12='ssh root@d12'
-alias dockerdev='docker run --rm -it ubuntu:latest bash -c "apt update && apt install -y sudo && useradd -m -s /bin/bash -G sudo dev && echo '\''dev ALL=(ALL) NOPASSWD:ALL'\'' >> /etc/sudoers && su - dev"'
+alias dockerdev='docker run --rm -it ubuntu:latest bash -c "apt update && apt install -y sudo && useradd -m -s /bin/bash -G sudo dev && echo '\''dev:password'\'' | chpasswd && echo '\''dev ALL=(ALL) NOPASSWD:ALL'\'' >> /etc/sudoers && su - dev"'
 alias sdocker='ssh root@docker'
 alias skali='ssh root@kali'
 alias su22='ssh root@u22'

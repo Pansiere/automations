@@ -3,11 +3,11 @@
 cd ~/
 
 # Atualiza pacotes e instala programas necessários
-apt install eza -y
-apt install vim -y
-apt install neofetch -y #programa necessário
-apt install zsh -y      #programa necessário
-apt install curl git -y #programa necessário
+sudo apt install eza -y
+sudo apt install vim -y
+sudo apt install neofetch -y #programa necessário
+sudo apt install zsh -y      #programa necessário
+sudo apt install curl git -y #programa necessário
 
 # Altera o shell padrão para Zsh
 chsh -s $(which zsh)
