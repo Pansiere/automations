@@ -35,6 +35,7 @@ fi
 
 # Agora executa os comandos
 echo "🛑 Removendo containers antigos..."
+docker ps -aq | xargs docker rm -f 2>/dev/null
 
 echo "🚀 Subindo containers do ProSeleta..."
 cd ~/IMPACTA/proseleta || exit
