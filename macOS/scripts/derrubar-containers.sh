@@ -32,5 +32,3 @@ if pgrep -x "Docker Desktop" >/dev/null; then
 else
   echo "Docker Engine já está parado — pulando remoção de containers."
 fi
-
-
