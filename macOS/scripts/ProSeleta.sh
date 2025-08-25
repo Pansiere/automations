@@ -33,6 +33,17 @@ if [ $? -ne 0 ]; then
   echo "✅ Docker iniciado com sucesso!"
 fi
 
+# Fecha a janela do Docker Desktop (como se clicasse no X vermelho)
+osascript <<EOF
+tell application "System Events"
+    tell process "Docker Desktop"
+        if (count of windows) > 0 then
+            click button 1 of window 1
+        end if
+    end tell
+end tell
+EOF
+
 # Agora executa os comandos
 echo "🛑 Removendo containers antigos..."
 docker ps -aq | xargs docker rm -f 2>/dev/null
