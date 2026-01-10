@@ -49,6 +49,6 @@ echo "🛑 Removendo containers antigos..."
 docker ps -aq | xargs docker rm -f 2>/dev/null
 
 echo "🚀 Subindo containers do SECON..."
-cd ~/PANSIERE/secon/docker || exit
+cd ~/secon/docker || exit
 docker compose up -d
 cd - || exit
