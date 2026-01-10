@@ -49,7 +49,7 @@ echo "🛑 Removendo containers antigos..."
 docker ps -aq | xargs docker rm -f 2>/dev/null
 
 echo "🚀 Subindo containers do ProSeleta..."
-cd ~/IMPACTA/proseleta || exit
+cd ~/proseleta || exit
 docker compose up -d
 docker compose stop mailhog
 cd - || exit
