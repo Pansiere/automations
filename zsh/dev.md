@@ -4,9 +4,7 @@ Este passo-a-passo configura o abiente de teste para testar o terminal ZSH, inst
 
 1. Rode o ambiente de teste
 ```bash
-docker run --rm -it \
-  -v "$(pwd)/.zsh:/root/.zsh-dev" \
-  ubuntu:24.04 bash
+docker run --rm -it ubuntu:24.04 bash
   ```
 
 2. Script para instalar o ZSH:
